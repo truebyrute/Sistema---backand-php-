@@ -1,0 +1,33 @@
+POST http://localhost/sistema/cliente.php
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "sobrenome": "Silva",
+    "email": "joao@email.com",
+    "telefone": "(11) 99999-9999"
+}
+
+###
+
+GET http://localhost/sistema/cliente.php
+
+###
+
+GET http://localhost/sistema/cliente.php?id=1
+
+###
+
+PUT http://localhost/sistema/cliente.php?id=1
+Content-Type: application/json
+
+{
+    "nome": "João Atualizado",
+    "sobrenome": "Silva",
+    "email": "joaoatualizado@email.com",
+    "telefone": "(11) 98888-7777"
+}
+
+###
+
+DELETE http://localhost/sistema/cliente.php?id=4
